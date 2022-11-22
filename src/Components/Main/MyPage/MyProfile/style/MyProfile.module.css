@@ -1,0 +1,7 @@
+.bg{
+    background-image: url(../../../../../assets/user-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 60px;
+}

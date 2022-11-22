@@ -1,0 +1,44 @@
+.photos-wrapper{
+    margin: 60px auto 0 auto;
+    width: 70%;
+}
+
+.photos-wrapper .block{
+    width: 100%;
+    background-color: #edf2f6;
+    color: #3B5998;
+    padding: 10px 30px;
+    margin-bottom: 30px;
+}
+
+.photos-wrapper .block h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    border-left: 3px solid red;
+    padding-left: 5px;
+}
+
+.photos-wrapper .photos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #edf2f6;
+    padding: 20px;
+}
+
+.photos-wrapper .photos div{
+    height: 250px;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 6px;
+    width: 31%;
+    margin-bottom: 15px;
+}
+
+.photos-wrapper .photos div img{
+    transition: transform 0.25s;
+}
+
+.photos-wrapper .photos div:hover img{
+    transform: scale(1.1);
+}

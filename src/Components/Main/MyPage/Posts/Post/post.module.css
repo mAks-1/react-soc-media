@@ -1,0 +1,55 @@
+.post{
+    width: 100%;
+    background-color: #EFEFEF;
+    margin: 15px 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #3B5998;
+    padding: 20px;
+}
+
+.photoName{
+    display: flex;
+    align-items: center;
+}
+
+.avatar{
+    width: 52px;
+    border-radius: 40%;
+    margin-right: 20px;
+}
+
+.postText{
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.postPhoto{
+    width: 100%;
+}
+
+.btnWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 22%;
+}
+
+.btn{
+    background-color: red;
+    padding: 6px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    transition: .3s;
+}
+
+.btnImg{
+    width: 18px;
+    height: 18px;
+}
+
+.btn:hover{
+    background-color: #9a9fbf;
+    border: 2px solid red;
+}

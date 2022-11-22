@@ -1,0 +1,32 @@
+.nav-bar-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 10px 40px;
+    width: 80px;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    top: 20px;
+}
+
+.nav-bar-wrapper ul li {
+    display: block;
+    margin-bottom: 30px;
+    background-color: #E9E9E9;
+    padding: 10px;
+    border-radius: 50%;
+    transition: .2s;
+}
+
+.nav-bar-wrapper ul li:hover{
+    background-color: red;
+}
+
+.nav-bar-wrapper ul li a {
+}
+
+.nav-bar-wrapper ul li a img {
+    width: 26px;
+    height: 26px;
+}
