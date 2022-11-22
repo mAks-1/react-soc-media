@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/react-soc-media/static/css/main.9b18e5ac.css",
+    "main.js": "/react-soc-media/static/js/main.f41ce9e7.js",
+    "static/media/friend-bg1.jpg": "/react-soc-media/static/media/friend-bg1.c24b4aed4e90140562b6.jpg",
+    "static/media/friend-bg2.jpg": "/react-soc-media/static/media/friend-bg2.5940e61f997e06c64c93.jpg",
+    "static/media/friend-bg4.jpg": "/react-soc-media/static/media/friend-bg4.78637105cdbbc97416f2.jpg",
+    "static/media/friend-bg3.jpg": "/react-soc-media/static/media/friend-bg3.d5290da8f396a04976b7.jpg",
+    "static/media/friend-bg5.jpg": "/react-soc-media/static/media/friend-bg5.63243e8f137976e03764.jpg",
+    "static/media/friend-bg6.jpg": "/react-soc-media/static/media/friend-bg6.dac9af43857b0b18079b.jpg",
+    "static/media/friend-photo3.jpg": "/react-soc-media/static/media/friend-photo3.1988ff726a9a0bc537ec.jpg",
+    "static/media/friend-photo2.jpg": "/react-soc-media/static/media/friend-photo2.f788cdcef4516cdf09c9.jpg",
+    "static/media/friend-photo6.jpg": "/react-soc-media/static/media/friend-photo6.11c53919c13615db7aa5.jpg",
+    "static/media/user-bg.jpg": "/react-soc-media/static/media/user-bg.7f0931013cf940bbb27d.jpg",
+    "static/media/friend-photo1.jpg": "/react-soc-media/static/media/friend-photo1.9401f9f9e2eb8bdf0038.jpg",
+    "static/media/user-photo1.jpg": "/react-soc-media/static/media/user-photo1.4fba0b54735573085320.jpg",
+    "static/media/friend-photo5.jpg": "/react-soc-media/static/media/friend-photo5.9b9dde4d101096580d0f.jpg",
+    "static/media/friend-photo4.jpg": "/react-soc-media/static/media/friend-photo4.269b737854abaf979d17.jpg",
+    "static/media/valorant.jpg": "/react-soc-media/static/media/valorant.db7036fbe158cd825d0a.jpg",
+    "static/media/dota.png": "/react-soc-media/static/media/dota.df32339df557fd155cd1.png",
+    "static/media/god-of-war.jpg": "/react-soc-media/static/media/god-of-war.d2a295a69a2c62b37ea0.jpg",
+    "static/media/photo1.jpg": "/react-soc-media/static/media/photo1.3602dfc46cc125561305.jpg",
+    "static/media/simpleCS.jpg": "/react-soc-media/static/media/simpleCS.74d9545f05008b62673b.jpg",
+    "static/media/despasito.jpg": "/react-soc-media/static/media/despasito.b1a9677552b01c388111.jpg",
+    "static/media/football.jpg": "/react-soc-media/static/media/football.3409134e941743009cf5.jpg",
+    "static/media/spiderman.jpg": "/react-soc-media/static/media/spiderman.37bd7d8edeec6261d7e2.jpg",
+    "static/media/flowers.jpg": "/react-soc-media/static/media/flowers.cc78bcdcc6c843a8884b.jpg",
+    "static/media/music.jpg": "/react-soc-media/static/media/music.03371e526b78d7c8db94.jpg",
+    "index.html": "/react-soc-media/index.html",
+    "main.9b18e5ac.css.map": "/react-soc-media/static/css/main.9b18e5ac.css.map",
+    "main.f41ce9e7.js.map": "/react-soc-media/static/js/main.f41ce9e7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9b18e5ac.css",
+    "static/js/main.f41ce9e7.js"
+  ]
+}
