@@ -26,19 +26,6 @@
     padding: 20px;
 }
 
-.photos-wrapper .photos div{
-    height: 250px;
-    overflow: hidden;
-    cursor: pointer;
-    border-radius: 6px;
-    width: 31%;
-    margin-bottom: 15px;
-}
-
-.photos-wrapper .photos div img{
-    transition: transform 0.25s;
-}
-
 .photos-wrapper .photos div:hover img{
     transform: scale(1.1);
 }

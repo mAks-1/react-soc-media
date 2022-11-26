@@ -3,11 +3,11 @@ import MyProfile from "./MyProfile/MyProfile";
 import Posts from "./Posts/Posts";
 import styles from './my-page.module.css';
 
-const MyPage = () => {
+const MyPage = (props) => {
     return(
         <div className={styles.div}>
             <MyProfile/>
-            <Posts/>
+            <Posts posts={props.posts}/>
         </div>
     )
 }

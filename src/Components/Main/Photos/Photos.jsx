@@ -1,6 +1,8 @@
 import React from "react";
 import './photos.css';
 import '../../../style.css';
+import Photo from "./Photo/Photo";
+
 import l from '../../../assets/photo1.jpg';
 
 let photosState = [
@@ -15,9 +17,12 @@ let photosState = [
     {img: '../../../assets/photo9.jpg', id: 9}
 ];
 
-let photosElement = photosState.map(photo => <div key={photo.id}><img className="q" key={photo.id} src={photo.img}/></div>);
+let photosElement = photosState.map(photo => <Photo key={photo.id} src={photo.img}/>);
 
-const Photos = () => {
+
+const Photos = (props) => {
+    // let photosElement = props.photos.map(photo => <Photo key={photo.id} src={photo.img}/>);
+
     return(
         <div className="photos-wrapper">
             <div className="block">

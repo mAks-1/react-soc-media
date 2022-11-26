@@ -1,0 +1,12 @@
+.img{
+    transition: transform 0.25s;
+}
+
+.div{
+    height: 250px;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 6px;
+    width: 31%;
+    margin-bottom: 15px;
+}
