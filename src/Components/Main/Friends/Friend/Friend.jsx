@@ -17,7 +17,7 @@ const Friend = (props) => {
     return (
         <div className="friend-block">
             <img className="friend-block-bg" src={props.bg} alt=""/>
-            <img className="friend-block-photo" src={photo1} alt=""/>
+            <img className="friend-block-photo" src={props.avatar} alt=""/>
             <div>
                 <h2>Followers: {props.followers}</h2>
                 <a>{props.name}</a>

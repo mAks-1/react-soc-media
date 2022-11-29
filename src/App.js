@@ -11,17 +11,21 @@ import MyPage from "./Components/Main/MyPage/MyPage";
 import Videos from "./Components/Main/Videos/Videos";
 
 function App(props) {
+    // console.log(props.state.newsFeedPage.newsFeedPosts)
     return (
         <div className="App">
             <Header/>
             <Main>
                 <NavBar/>
                 <Routes>
-                    <Route path="/home-page" element={<MyPage posts={props.state.profilePage.posts}/>}/>
-                    <Route path="/newsfeed" element={<Newsfeed/>}/>
-                    <Route path="/friends" element={<Friends friends={props.state.friendsInfo.friends}/>}/>
+                    <Route path="/home-page" element={<MyPage profilePage={props.state.profilePage} dispatch={props.dispatch}/>}/>
+
+                    <Route path="/newsfeed" element={<Newsfeed newsFeedPage={props.state.newsFeedPage.newsFeedPosts} dispatch={props.dispatch}/>}/>
+
+                    <Route path="/friends" element={<Friends friends={props.props.friendsInfo.friends}/>}/>
                     {/*<Route path="/chats" element={}/>*/}
-                    <Route path="/photos" element={<Photos photos={props.state.userPhotos.photos}/>}/>
+                    {/*<Route path="/photos" element={<Photos/>}/>*/}
+                    <Route path="/photos" element={<Photos photos={props.props.userPhotos.photos}/>}/>
                     <Route path="/videos" element={<Videos/>}/>
                 </Routes>
             </Main>

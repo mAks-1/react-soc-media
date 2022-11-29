@@ -1,25 +1,10 @@
 let state = {
-    profilePage: {
-        posts: [
-            {id: 1, message: 'new post 1', likesAmount: 17, img: '../../../../assets/post-photo1.jpg'},
-            {id: 2, message: 'new post 2', likesAmount: 27, img: '../../../../assets/post-photo2.jpg'},
-            {id: 3, message: 'new post 3', likesAmount: 15, img: '../../../../assets/post-photo3.jpg'},
-            {id: 4, message: 'new post 4', likesAmount: 67, img: '../../../../assets/post-photo4.jpg'},
-            {id: 5, message: 'new post 5', likesAmount: 72, img: '../../../../assets/post-photo5.jpg'},
-            {id: 6, message: 'new post 6', likesAmount: 43, img: '../../../../assets/post-photo6.jpg'},
-            {id: 7, message: 'new post 7', likesAmount: 123, img: '../../../../assets/post-photo7.jpg'},
-            {id: 8, message: 'new post 8', likesAmount: 109, img: '../../../../assets/post-photo8.jpg'},
-            {id: 9, message: 'new post 9', likesAmount: 170, img: '../../../../assets/post-photo9.jpg'},
-            {id: 10, message: 'new post 10', likesAmount: 165, img: '../../../../assets/post-photo10.jpg'}
-        ]
-    },
-
     friendsInfo:{
         friends: [
             {
                 userId: 1,
-                userAvatar: '../../../friend-photo1.jpg',
-                userBg: '../../../assets/friend-bg1.jpg',
+                userAvatar: 'https://firebasestorage.googleapis.com/v0/b/react-soc-media.appspot.com/o/friend-photo1.jpg?alt=media&token=361e5cdd-38c6-4223-92c8-0205ce00b9df',
+                userBg: 'https://firebasestorage.googleapis.com/v0/b/react-soc-media.appspot.com/o/friend-bg1.jpg?alt=media&token=51f01220-d9e3-4b43-818e-4ce946438c94',
                 followers: 452,
                 name: 'Anna',
                 location: 'Kyiv, Ukraine',
@@ -31,8 +16,8 @@ let state = {
             },
             {
                 userId: 2,
-                userAvatar: '../../../assets/friend-photo1.jpg',
-                userBg: '../../../assets/friend-bg1.jpg',
+                userAvatar: 'https://firebasestorage.googleapis.com/v0/b/react-soc-media.appspot.com/o/friend-photo2.jpg?alt=media&token=361e5cdd-38c6-4223-92c8-0205ce00b9df',
+                userBg: 'https://firebasestorage.googleapis.com/v0/b/react-soc-media.appspot.com/o/friend-bg2.jpg?alt=media&token=51f01220-d9e3-4b43-818e-4ce946438c94',
                 followers: 612,
                 name: 'Andrew',
                 location: 'Odessa, Ukraine',
@@ -44,8 +29,8 @@ let state = {
             },
             {
                 userId: 3,
-                userAvatar: '../../../assets/friend-photo1.jpg',
-                userBg: '../../../assets/friend-bg1.jpg',
+                userAvatar: 'https://firebasestorage.googleapis.com/v0/b/react-soc-media.appspot.com/o/friend-photo3.jpg?alt=media&token=361e5cdd-38c6-4223-92c8-0205ce00b9df',
+                userBg: 'https://firebasestorage.googleapis.com/v0/b/react-soc-media.appspot.com/o/friend-bg3.jpg?alt=media&token=51f01220-d9e3-4b43-818e-4ce946438c94',
                 followers: 412,
                 name: 'Ben',
                 location: 'London, UK',
@@ -57,8 +42,8 @@ let state = {
             },
             {
                 userId: 4,
-                userAvatar: '../../../assets/friend-photo1.jpg',
-                userBg: '../../../assets/friend-bg1.jpg',
+                userAvatar: 'https://firebasestorage.googleapis.com/v0/b/react-soc-media.appspot.com/o/friend-photo4.jpg?alt=media&token=361e5cdd-38c6-4223-92c8-0205ce00b9df',
+                userBg: 'https://firebasestorage.googleapis.com/v0/b/react-soc-media.appspot.com/o/friend-bg4.jpg?alt=media&token=51f01220-d9e3-4b43-818e-4ce946438c94',
                 followers: 792,
                 name: 'Mike',
                 location: 'Los-Angeles, USA',
@@ -70,8 +55,8 @@ let state = {
             },
             {
                 userId: 5,
-                userAvatar: '../../../assets/friend-photo1.jpg',
-                userBg: '../../../assets/friend-bg1.jpg',
+                userAvatar: 'https://firebasestorage.googleapis.com/v0/b/react-soc-media.appspot.com/o/friend-photo5.jpg?alt=media&token=361e5cdd-38c6-4223-92c8-0205ce00b9df',
+                userBg: 'https://firebasestorage.googleapis.com/v0/b/react-soc-media.appspot.com/o/friend-bg5.jpg?alt=media&token=51f01220-d9e3-4b43-818e-4ce946438c94',
                 followers: 419,
                 name: 'Monica',
                 location: 'Barcelona, Spain',
@@ -83,8 +68,8 @@ let state = {
             },
             {
                 userId: 6,
-                userAvatar: '../../../assets/friend-photo1.jpg',
-                userBg: '../../../assets/friend-bg1.jpg',
+                userAvatar: 'https://firebasestorage.googleapis.com/v0/b/react-soc-media.appspot.com/o/friend-photo6.jpg?alt=media&token=361e5cdd-38c6-4223-92c8-0205ce00b9df',
+                userBg: 'https://firebasestorage.googleapis.com/v0/b/react-soc-media.appspot.com/o/friend-bg6.jpg?alt=media&token=51f01220-d9e3-4b43-818e-4ce946438c94',
                 followers: 1242,
                 name: 'Lara',
                 location: 'İstanbul, Turkey',
@@ -96,8 +81,8 @@ let state = {
             },
             {
                 userId: 7,
-                userAvatar: '../../../assets/friend-photo1.jpg',
-                userBg: '../../../assets/friend-bg1.jpg',
+                userAvatar: 'https://firebasestorage.googleapis.com/v0/b/react-soc-media.appspot.com/o/friend-photo7.jpg?alt=media&token=361e5cdd-38c6-4223-92c8-0205ce00b9df',
+                userBg: 'https://firebasestorage.googleapis.com/v0/b/react-soc-media.appspot.com/o/friend-bg7.jpg?alt=media&token=51f01220-d9e3-4b43-818e-4ce946438c94',
                 followers: 783,
                 name: 'Artem',
                 location: 'Kharkiv, Ukraine',
@@ -112,15 +97,15 @@ let state = {
 
     userPhotos:{
         photos: [
-            {img: '../../../assets/photo1.jpg', id: 1},
-            {img: '../../../assets/photo2.jpg', id: 2},
-            {img: '../../../assets/photo3.jpg', id: 3},
-            {img: '../../../assets/photo4.jpg', id: 4},
-            {img: '../../../assets/photo5.jpg', id: 5},
-            {img: '../../../assets/photo6.jpg', id: 6},
-            {img: '../../../assets/photo7.jpg', id: 7},
-            {img: '../../../assets/photo8.jpg', id: 8},
-            {img: '../../../assets/photo9.jpg', id: 9}
+            {img: 'https://firebasestorage.googleapis.com/v0/b/react-soc-media.appspot.com/o/photo1.jpg?alt=media&token=d4d2f72e-57be-4213-b90d-94389493db38', id: 1},
+            {img: 'https://firebasestorage.googleapis.com/v0/b/react-soc-media.appspot.com/o/photo2.jpg?alt=media&token=ba56f48f-8cac-4cd4-8087-d862a95e8925', id: 2},
+            {img: 'https://firebasestorage.googleapis.com/v0/b/react-soc-media.appspot.com/o/photo3.jpg?alt=media&token=6e714014-2e34-4f51-8223-f977f2c905ef', id: 3},
+            {img: 'https://firebasestorage.googleapis.com/v0/b/react-soc-media.appspot.com/o/photo4.jpg?alt=media&token=835e48c7-6a56-49c6-85fa-163d0dd7922c', id: 4},
+            {img: 'https://firebasestorage.googleapis.com/v0/b/react-soc-media.appspot.com/o/photo5.jpg?alt=media&token=85f791f6-38f6-4a96-afd9-84e2bb01132e', id: 5},
+            {img: 'https://firebasestorage.googleapis.com/v0/b/react-soc-media.appspot.com/o/photo6.jpg?alt=media&token=4836ab6d-68a5-4025-8eb5-71e67bcc0b29', id: 6},
+            {img: 'https://firebasestorage.googleapis.com/v0/b/react-soc-media.appspot.com/o/photo7.jpg?alt=media&token=ca147766-ab3f-43a4-985a-b3c1cc2b1a07', id: 7},
+            {img: 'https://firebasestorage.googleapis.com/v0/b/react-soc-media.appspot.com/o/photo8.jpg?alt=media&token=5fc490a4-bfb5-437a-a667-1e3436b5ce48', id: 8},
+            {img: 'https://firebasestorage.googleapis.com/v0/b/react-soc-media.appspot.com/o/photo9.jpg?alt=media&token=cde2de46-9412-49d7-8f8c-490c5e412075', id: 9}
         ]
     }
 };

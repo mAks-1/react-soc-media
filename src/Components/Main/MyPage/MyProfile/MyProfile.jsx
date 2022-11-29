@@ -26,11 +26,6 @@ const MyProfile = () => {
                     </div>
                 </div>
             </div>
-            <div className="create-post-block">
-                <h1>My recent posts</h1>
-                <textarea name="add-post" placeholder="Add some text to your post" cols="40" rows="2"></textarea>
-                <button className="post-post">Post</button>
-            </div>
         </div>
     )
 }
