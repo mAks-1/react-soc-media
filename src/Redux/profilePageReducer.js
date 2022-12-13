@@ -1,6 +1,9 @@
 const ADD_POST = 'ADD-POST';
 const UPDATE_NEW_POST_TEXT = 'UPDATE-NEW-POST-TEXT';
+const SET_POSTS = 'SET_POSTS';
 
+
+// WITHOUT LOCAL SERVER USE THIS OBJECT
 
 let initialState = {
     posts: [
@@ -15,8 +18,18 @@ let initialState = {
         {id: 9, message: 'new post 9', likesAmount: 170, img: 'https://firebasestorage.googleapis.com/v0/b/react-soc-media.appspot.com/o/post-photo9.jpg?alt=media&token=ed44d8a2-0458-40b9-a4a7-d750c3905f68'},
         {id: 10, message: 'new post 10', likesAmount: 165, img: 'https://firebasestorage.googleapis.com/v0/b/react-soc-media.appspot.com/o/post-photo10.jpg?alt=media&token=ed44d8a2-0458-40b9-a4a7-d750c3905f68'}
     ],
-    newPostText: 'new post text'
+    newPostText: ''
 };
+
+
+
+
+// WITH LOCAL SERVER USE THIS OBJECT
+
+// let initialState = {
+//     posts: [],
+//     newPostText: ''
+// }
 
 let idCounter = initialState.posts.length;
 
@@ -30,16 +43,24 @@ const profilePageReducer = (state = initialState, action) => {
                 message: state.newPostText,
                 img: "https://firebasestorage.googleapis.com/v0/b/react-soc-media.appspot.com/o/newpost.png?alt=media&token=bcb36f62-8e8a-4a28-9f07-84a5467d08a6" ,
                 likesAmount: 0
-            }
-
-            state.posts.push(newPost);
-            state.newPostText = '';
-            console.log(state)
-            return state;
+            };
+            return {
+                ...state,
+                posts: [...state.posts, newPost],
+                newPostText: ''
+            };
 
         case UPDATE_NEW_POST_TEXT:
-            state.newPostText = action.newText;
-            return state;
+            return {
+                ...state,
+                newPostText: action.newText
+            };
+
+        case SET_POSTS:
+            return{
+                ...state,
+                posts: action.posts
+            }
 
         default:
             return state;
@@ -57,6 +78,13 @@ export const UpdateNewPostTextActionCreator = (text) =>{
     return{
         type: UPDATE_NEW_POST_TEXT,
         newText: text
+    }
+}
+
+export const setPostsCreator = (posts) => {
+    return{
+        type: SET_POSTS,
+        posts
     }
 }
 

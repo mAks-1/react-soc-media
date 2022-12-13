@@ -12,14 +12,14 @@ import {NavLink} from "react-router-dom";
 const NavBar = () => {
     return (
         <div className="nav-bar-wrapper">
-            <ul>
-                <li><NavLink to="/home-page"><img src={home} alt=""/></NavLink></li>
-                <li><NavLink to="/newsfeed"><img src={burgerMenu} alt=""/></NavLink></li>
-                <li><NavLink to="/friends"><img src={friends} alt=""/></NavLink></li>
-                <li><NavLink to="/chats"><img src={chat} alt=""/></NavLink></li>
-                <li><NavLink to="/photos"><img src={images} alt=""/></NavLink></li>
-                <li><NavLink to="/videos"><img src={video} alt=""/></NavLink></li>
-            </ul>
+            <div className="nav-link-wrapper">
+                <NavLink className="navlink" to="/home-page"><img src={home} alt=""/></NavLink>
+                <NavLink className="navlink" to="/newsfeed"><img src={burgerMenu} alt=""/></NavLink>
+                <NavLink className="navlink" to="/friends"><img src={friends} alt=""/></NavLink>
+                <NavLink className="navlink" to="/chats"><img src={chat} alt=""/></NavLink>
+                <NavLink className="navlink" to="/photos"><img src={images} alt=""/></NavLink>
+                <NavLink className="navlink" to="/videos"><img src={video} alt=""/></NavLink>
+            </div>
         </div>
     )
 }

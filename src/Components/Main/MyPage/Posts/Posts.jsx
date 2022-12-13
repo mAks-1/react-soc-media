@@ -1,24 +1,27 @@
 import React from "react";
 import styles from './posts.module.css';
 import Post from "./Post/Post";
-import {addPostActionCreator, UpdateNewPostTextActionCreator} from "../../../../Redux/profilePageReducer";
+import axios from "axios";
 
 const Posts = (props) => {
-
-    // console.log(props.posts)
+    // if(props.posts.length === 0){
+    //     axios
+    //         .get('http://localhost:3000/posts')
+    //         .then(response => {
+    //             props.setPosts(response.data.posts);
+    //         })
+    // }
 
     let postElement = props.posts.map(post => <Post key={post.id} message={post.message} img={post.img} likes={post.likesAmount}/>);
     let newPostElement = React.createRef();
 
     let addPost = () => {
-        props.dispatch(addPostActionCreator());
-        newPostElement.current.value = '';
+        props.addPost();
     }
 
     let onPostChange = () => {
         let text = newPostElement.current.value;
-        let action = UpdateNewPostTextActionCreator(text);
-        props.dispatch(action);
+        props.updateNewPostText(text);
     }
 
     return(

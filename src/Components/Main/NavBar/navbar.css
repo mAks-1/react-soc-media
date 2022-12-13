@@ -7,10 +7,14 @@
     align-items: center;
     justify-content: space-evenly;
     position: fixed;
-    top: 20px;
+    top: 40px;
 }
 
-.nav-bar-wrapper ul li {
+.nav-bar-wrapper .nav-link-wrapper{
+
+}
+
+.nav-bar-wrapper .nav-link-wrapper .navlink {
     display: block;
     margin-bottom: 30px;
     background-color: #E9E9E9;
@@ -19,14 +23,11 @@
     transition: .2s;
 }
 
-.nav-bar-wrapper ul li:hover{
+.nav-bar-wrapper .nav-link-wrapper .navlink:hover{
     background-color: red;
 }
 
-.nav-bar-wrapper ul li a {
-}
-
-.nav-bar-wrapper ul li a img {
+.nav-bar-wrapper .nav-link-wrapper img {
     width: 26px;
     height: 26px;
 }

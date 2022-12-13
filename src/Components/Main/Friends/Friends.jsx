@@ -2,9 +2,18 @@ import React from "react";
 import styles from './friends.module.css';
 import '../../../style.css';
 import Friend from "./Friend/Friend";
+import axios from "axios";
 
 
 const Friends = (props) => {
+    // if(props.friends.length === 0){
+    //     axios
+    //         .get('http://localhost:3000/friends')
+    //         .then(response => {
+    //             props.setUsers(response.data.friends);
+    //         })
+    // }
+
     let friend = props.friends.map(friend => <Friend
             key={friend.id}
             avatar={friend.userAvatar}
@@ -25,5 +34,6 @@ const Friends = (props) => {
         </div>
     )
 }
+
 
 export default Friends;

@@ -2,25 +2,20 @@ import React from "react";
 import './photos.css';
 import '../../../style.css';
 import Photo from "./Photo/Photo";
+import axios from "axios";
 
-import l from '../../../assets/photo1.jpg';
-
-// let photosState = [
-//     {img: '../../../assets/photo1.jpg', id: 1},
-//     {img: '../../../assets/photo2.jpg', id: 2},
-//     {img: '../../../assets/photo3.jpg', id: 3},
-//     {img: '../../../assets/photo4.jpg', id: 4},
-//     {img: '../../../assets/photo5.jpg', id: 5},
-//     {img: '../../../assets/photo6.jpg', id: 6},
-//     {img: '../../../assets/photo7.jpg', id: 7},
-//     {img: '../../../assets/photo8.jpg', id: 8},
-//     {img: '../../../assets/photo9.jpg', id: 9}
-// ];
-
-// let photosElement = photosState.map(photo => <Photo key={photo.id} src={photo.img}/>);
 
 
 const Photos = (props) => {
+
+    // if(props.photos.length === 0){
+    //     axios
+    //         .get('http://localhost:3000/photos')
+    //         .then(response => {
+    //            props.setPhotos(response.data.photos);
+    //          })
+    // }
+
     let photosElement = props.photos.map(photo => <Photo key={photo.id} src={photo.img}/>);
 
     return(

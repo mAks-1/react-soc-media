@@ -5,7 +5,7 @@ let initialStateNewsFeed = {
     newsFeedPosts:[
         // {id: 1, message: 'new post 1', likesAmount: 15, img: 'https://firebasestorage.googleapis.com/v0/b/react-soc-media.appspot.com/o/post-photo1.jpg?alt=media&token=ed44d8a2-0458-40b9-a4a7-d750c3905f68'}
     ],
-    newsFeedPostText: 'new post text'
+    newsFeedPostText: ''
 }
 
 let idCounter1 = initialStateNewsFeed.newsFeedPosts.length;
@@ -20,14 +20,17 @@ const newsFeedPageReducer = (state = initialStateNewsFeed, action) => {
                 img: "https://firebasestorage.googleapis.com/v0/b/react-soc-media.appspot.com/o/newpost.png?alt=media&token=bcb36f62-8e8a-4a28-9f07-84a5467d08a6" ,
                 likesAmount: 0
             }
-
-            state.newsFeedPosts.push(newsFeedPost);
-            state.newsFeedPostText = '';
-            return state;
+            return{
+                ...state,
+                newsFeedPosts: [...state.newsFeedPosts, newsFeedPost],
+                newsFeedPostText: ''
+            };
 
         case UPDATE_NEW_NEWSFEED_POST_TEXT:
-            state.newsFeedPostText = action.newText;
-            return state;
+            return{
+                ...state,
+                newsFeedPostText: action.newText
+            };
 
         default:
             return state;

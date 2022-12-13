@@ -6,18 +6,16 @@ import NewsFeedPost from "./NewsFeedPost/NewsFeedPost";
 
 
 const Newsfeed = (props) => {
-    let newsFeedElement = props.newsFeedPage.map(elem => <NewsFeedPost key={elem.id} message={elem.message} img={elem.img} likes={elem.likesAmount}/>);
+    let newsFeedElement = props.newsFeedPosts.map(elem => <NewsFeedPost key={elem.id} message={elem.message} img={elem.img} likes={elem.likesAmount}/>);
     let newNewsFeedElement = React.createRef();
 
     let addPost = () => {
-        props.dispatch(addNewsFeedPostActionCreator());
-        newNewsFeedElement.current.value = '';
+        props.addNewsFeedPost();
     }
 
     let onPostChange = () => {
         let text = newNewsFeedElement.current.value;
-        let action = UpdateNewsFeedPostTextActionCreator(text);
-        props.dispatch(action);
+        props.updateNewsFeedPostText(text);
     }
 
     return (
@@ -28,7 +26,6 @@ const Newsfeed = (props) => {
                 <button onClick={addPost} className="post-post">Post</button>
             </div>
             <div>
-                {/*<NewsFeedPost/>*/}
                 {newsFeedElement}
             </div>
         </div>
