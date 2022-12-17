@@ -2,8 +2,10 @@ import React from "react";
 import {
     addPostActionCreator,
     setPostsCreator,
-    UpdateNewPostTextActionCreator
-} from "../../../../Redux/profilePageReducer";
+    UpdateNewPostTextActionCreator,
+    likePostActionCreator
+}
+from "../../../../Redux/profilePageReducer";
 import Posts from "./Posts";
 import {connect} from "react-redux";
 
@@ -24,6 +26,9 @@ let mapDispatchToProps = (dispatch) => {
         },
         setPosts: (posts) => {
             dispatch(setPostsCreator(posts));
+        },
+        likePost: (id) => {
+            dispatch(likePostActionCreator(id))
         }
     }
 }

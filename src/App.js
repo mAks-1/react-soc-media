@@ -12,7 +12,7 @@ import SignUp from "./Components/Main/Sign-in-up/Sign-up";
 import FriendsContainer from "./Components/Main/Friends/FriendsContainer";
 import PhotosContainer from "./Components/Main/Photos/PhotosContainer";
 
-function App(props) {
+function App() {
     return (
         <div className="App">
             <Header/>

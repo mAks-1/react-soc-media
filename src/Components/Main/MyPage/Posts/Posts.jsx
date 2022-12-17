@@ -11,8 +11,7 @@ const Posts = (props) => {
     //             props.setPosts(response.data.posts);
     //         })
     // }
-
-    let postElement = props.posts.map(post => <Post key={post.id} message={post.message} img={post.img} likes={post.likesAmount}/>);
+    let postElement = props.posts.map(post => <Post liked={props.isLiked} likePost={props.likePost} id={post.id} key={post.id} message={post.message} img={post.img} likes={post.likesAmount}/>);
     let newPostElement = React.createRef();
 
     let addPost = () => {
